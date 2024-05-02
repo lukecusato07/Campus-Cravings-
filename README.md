@@ -1,9 +1,9 @@
-<div align="center">
+<div align="left">
 
 # Campus Cravings
 Campus Cravings is a one-stop shop for all of your favorite on-campus eats delivered right to your dorm!
 
-[Visit Campus Cravings]([https://yourwebsite.com](https://sites.pitt.edu/~luc59/luc59_final_project/index.html))
+[Visit Campus Cravings](https://sites.pitt.edu/~luc59/luc59_final_project/index.html)
 
   
   <br>
