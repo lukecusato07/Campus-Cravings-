@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="profile, information, update, payment, location">
+    <title>Profile | Campus Cravings</title>
+    <link rel="stylesheet" href="styling/style.css">
+    <link rel="icon" type="image/png" href="images/tab_logo.png">
+</head>
+<body>
+    <nav>
+        <ul class="nav_bar_main">
+            <li>
+                <a href="index.html" target="_blank">
+                    <button><h4>Home</h4></button>
+                </a>
+            </li>
+            <li>
+                <a href="order_page.html" target="_blank">
+                    <button><h4>Order</h4></button>
+                </a>
+            </li>
+            <li>
+                <a href="delivery_page.html" target="_blank">
+                    <button><h4>Delivery</h4></button>
+                </a>
+            </li>
+        </ul>
+        <ul class="personal">
+            <a href="order_page.html" target="_blank">
+                <img id="cart" alt="cart" src="https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Sale-Stickers-PNG/Shopping_Cart_Icon_PNG_Clipart.png?m=1629814077">
+            </a>
+            <a href="profile.html" target="_blank">
+                <img id="profile" alt="profile" src="https://static.vecteezy.com/system/resources/previews/019/879/186/original/user-icon-on-transparent-background-free-png.png">
+            </a>
+        </ul>
+    </nav>
+    <div class="welcome">
+        <h1>Your Profile</h1>
+    </div>
+    <form name="profile_form">
+        <div>
+            <fieldset class="personal_info">
+                <legend>Personal Information</legend>
+                <div class="info">
+                    <label for="customer_fname"><strong>First Name</strong></label><br>
+                    <input type="text" name="personal" id="customer_fname" value="">
+                </div>
+                <div class="info">
+                    <label for="customer_lname"><strong>Last Name</strong></label><br>
+                    <input type="text" name="personal" id="customer_lname" value="">
+                </div>
+            </fieldset><br>
+        </div>
+        <div class="pitt_info">
+            <fieldset>
+                <legend>Pitt Information</legend>
+                <div class="info">
+                    <label for="psoft_ID"><strong>PeopleSoft ID</strong></label>
+                    <input type="text" name="pitt" id="psoft_ID" value=""><br>
+                </div>
+                <div class="info">
+                    <label for="pitt_email"><strong>Email</strong></label>
+                    <input type="text" name="email" id="pitt_email" value="">
+                </div>
+                <div class="info">
+                    <label for="class_year"><strong>Class Year</strong></label>
+                    <label for="fresh">Freshman</label>
+                    <input type="radio" name="pitt" id="fresh" value="freshman">
+                    <label for="soph">Sophomore</label>
+                    <input type="radio" name="pitt" id="soph" value="sophomore">
+                    <label for="jun">Junior</label>
+                    <input type="radio" name="pitt" id="jun" value="junior">
+                    <label for="sen">Senior</label>
+                    <input type="radio" name="pitt" id="sen" value="senior">
+                </div>
+                <div class="info">
+                    <label for="res_halls"><strong>Residence Hall</strong></label>
+                    <select name="residence_halls" id="res_halls">
+                        <option id="select" value="blank" disabled selected>Select</option>
+                        <option value="amos">Amos Hall</option>
+                        <option value="bouquet">Bouquet Gardens</option>
+                        <option value="brackenridge">Brackenridge Hall</option>
+                        <option value="bruce">Bruce Hall</option>
+                        <option value="centre_apt">Centre Plaza Apartments</option>
+                        <option value="cg_apt">College Garden Apartments</option>
+                        <option value="ds_apt">Darrah Street Apartments</option>
+                        <option value="forbes">Forbes Hall</option>
+                        <option value="frat">Fraternity Complex</option>
+                        <option value="holland">Holland Hall</option>
+                        <option value="hyacinth">Hyacinth Place</option>
+                        <option value="irvis">Irvis Hall</option>
+                        <optgroup label="Litchfield Towers">
+                            <option value="towerA">Tower A</option>
+                            <option value="towerB">Tower B</option>
+                            <option value="towerC">Tower C</option>
+                        </optgroup>
+                        <option value="lothrop">Lothrop Hall</option>
+                        <option value="mccormick">McCormick Hall</option>
+                        <option value="nordenberg">Nordenberg Hall</option>
+                        <option value="oak_apt">Oakwood Apartments</option>
+                        <option value="panther">Panther Hall</option>
+                        <option value="bigelow">Residences on Bigelow</option>
+                        <option value="ruskin">Ruskin Hall</option>
+                        <option value="sutherland">Sutherland Hall</option>
+                        <option value="bridge">The Bridge on Forbes</option>
+                        <option value="strand">The Strand</option>
+                        <option value="university">University Hall</option>
+                    </select>
+                </div>
+            </fieldset><br>
+        </div>
+        <div class="payment_profile">
+            <fieldset>
+                <legend>Payment Info</legend>
+                <div class="info">
+                    <label for="card_prof"><strong>Card (On File):</strong></label>
+                    <input type="text" name="card_profile" id="card_prof" value="**** **** **** 0000" readonly>
+                </div>
+                <div class="info">
+                    <label for="card_Nprof"><strong>Cardholder Name</strong></label>
+                    <input type="text" name="card_Nprofile" id="card_Nprof" value="John Smith" readonly>
+                </div>
+                <div class="info">
+                    <label for="card_Eprof"><strong>Cardholder Email</strong></label>
+                    <input type="text" name="card_Eprofile" id="card_Eprof" value="JSS134@pitt.edu" readonly>
+                </div>
+                <div class="info">
+                    <label for="card_ADprof"><strong>Billing Address</strong></label>
+                    <input type="text" name="card_ADprofile" id="card_ADprof" value="4200 Fifth Ave, Pittsburgh, PA 15260" readonly>
+                </div>
+                <div class="info">
+                    <button onclick="location.href='payment.html'">Update Payment Information</button>
+                </div>
+            </fieldset>
+        </div>
+        <div class="dietary">
+            <fieldset>
+                <legend>Dietary Information</legend>
+                <div class="info">
+                    <label for="yes"><strong>Dietary Restrictions?</strong></label>
+                    <label class="yn" for="yes">Yes</label>
+                    <input type="radio" id="yes" name="dietY" value="Yes">
+                    <label for="no">No</label><br>
+                    <input type="radio" id="no" name="dietN" value="No">
+                    <select name="dietary_restrictions" id="dietary_restrictions">
+                        <option id="select" value="blank" disabled selected>Select</option>
+                        <option value="vegan">Vegan</option>
+                        <option value="vegetarian">Vegetarian</option>
+                        <option value="halal">Halal</option>
+                        <option value="kosher">Kosher</option>
+                        <option value="lactose">Lactose Free</option>
+                        <option value="allergy">Food Allergy</option>
+                        <option value="other">Other</option>
+                    </select><br>
+                </div>
+                <div id="specify" style="display:none;">
+                    <label for="specify">Allergy: </label>
+                    <input type="textbox" id="allergy" name="allergy"><br>
+                    <label for="specify">Other: </label>
+                    <input type="textbox" id="other" name="other">
+                </div>
+                <div class="info">
+                    <label for="diet_extra"><strong>Anything else you would like the chef to know?</strong></label>
+                    <input type="text" name="extra_info" id="diet_extra" value="">
+                </div>
+            </fieldset>
+            <div id="message" style="display: none; color: green;">
+                <p>Your profile information has been updated!</p>
+            </div>
+        </div>
+        <div class="submit">
+            <br><input type="submit" value="Update Information" id="submit_profile">
+            <!-- <div id="message" style="display: none; color: green;">
+                <p>Your profile information has been updated!</p>
+            </div> -->
+        </div>
+    </form>
+    <script src="javascript/dietary.js"></script>
+</body>
+</html>

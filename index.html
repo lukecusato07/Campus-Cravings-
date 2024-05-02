@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="nav, carousel, options, trending, SALE, profile">
+    <title>Home | Campus Cravings</title>
+    <link rel="icon" type="image/png" href="images/tab_logo.png">
+    <link rel="stylesheet" href="styling/style.css">
+</head>
+<body>
+    <nav>
+        <ul class="nav_bar_main">
+            <li>
+                <a href="index.html" target="_blank">
+                    <button><h4>Home</h4></button>
+                </a>
+            </li>
+            <li>
+                <a href="order_page.html" target="_blank">
+                    <button><h4>Order</h4></button>
+                </a>
+            </li>
+            <li>
+                <a href="delivery_page.html" target="_blank">
+                    <button><h4>Delivery</h4></button>
+                </a>
+            </li>
+        </ul>
+        <ul class="personal">
+            <a href="order_page.html" target="_blank">
+                <img id="cart" alt="cart" src="https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Sale-Stickers-PNG/Shopping_Cart_Icon_PNG_Clipart.png?m=1629814077">
+            </a>
+            <a href="profile.html" target="_blank">
+                <img id="profile" alt="profile" src="https://static.vecteezy.com/system/resources/previews/019/879/186/original/user-icon-on-transparent-background-free-png.png">
+            </a>
+        </ul>
+    </nav>
+    <div class="welcome">
+        <h1>Welcome, John Smith!</h1>
+    </div>
+    <section class="carousel">
+        <div class="carousel_container">
+            <div class="carousel_item">
+                <a href="food_options.html#asian_general_tsao" target="_blank">
+                    <button><h3>Asian</h3></button>
+                </a>
+            </div>
+            <div class="carousel_item">
+                <a href="food_options.html#fast_food_cheeseburger" target="_blank">
+                    <button><h3>Fast Food</h3></button>
+                </a>
+            </div>
+            <div class="carousel_item">
+                <a href="food_options.html#pizza_cheese" target="_blank">
+                    <button><h3>Pizza</h3></button>
+                </a>
+            </div>
+            <div class="carousel_item">
+                <a href="food_options.html#pasta_spaghetti" target="_blank">
+                    <button><h3>Pasta</h3></button>
+                </a>
+            </div>
+            <div class="carousel_item">
+                <a href="food_options.html#noodles_pad_thai" target="_blank">
+                    <button><h3>Noodles</h3></button>
+                </a>
+            </div>
+            <div class="carousel_item">
+                <a href="food_options.html#spanish_ropa_vieja" target="_blank">
+                    <button><h3>Spanish</h3></button>
+                </a>
+            </div>
+            <div class="carousel_item">
+                <a href="food_options.html#indian_chicken_tikka" target="_blank">
+                    <button><h3>Indian</h3></button>
+                </a>
+            </div>
+            <div class="carousel_item">
+                <a href="food_options.html#greek_chicken_gyro" target="_blank">
+                    <button><h3>Greek</h3></button>
+                </a>
+            </div>
+            <div class="carousel_item">
+                <a href="food_options.html#dietary_tofu_rice_bowl" target="_blank">
+                    <button><h3>Dietary Food</h3></button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <script>
+        var carouselIndex = 0;
+        var carouselItems = document.querySelectorAll(".carousel-item");
+        var totalItems = carouselItems.length;
+
+        function showNextSlide() {
+            carouselItems[carouselIndex].style.display = "none";
+            carouselIndex = (carouselIndex + 1) % totalItems;
+            carouselItems[carouselIndex].style.display = "block";
+        }
+
+        function showPreviousSlide() {
+            carouselItems[carouselIndex].style.display = "none";
+            carouselIndex = (carouselIndex - 1 + totalItems) % totalItems;
+            carouselItems[carouselIndex].style.display = "block";
+        }
+
+        carouselItems[0].style.display = "block";
+    </script>
+    <div class="container">
+        <section class="side-left">
+            <div>
+                <button class="side_buttons" onclick="window.location.href='history.html'">
+                    <h3>Past Orders</h3>
+                </button>
+            </div>
+            <div>
+                <button class="side_buttons" onclick="window.location.href='food_options.html#trending_chicken_nuggets_fries'" target="_blank">
+                    <h3>Trending</h3>
+                </button>
+            </div>
+            <div>
+                <button class="side_buttons" onclick="window.location.href='food_options.html#sale_chocolate_chip_cookie'">
+                    <h3>SALE</h3>
+                </button>
+            </div>
+        </section>
+        <section class="side-right">
+            <p>Campus Cravings is a one-stop shop for all your favorite on-campus eats!</p>
+            <img alt="logo" src="images/logo.png">
+        </section>
+    </div>
+</body>
+</html>

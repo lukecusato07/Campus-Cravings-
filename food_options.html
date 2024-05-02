@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="asian, fast_food, pizza, pasta, noodles, greek, trending, SALE, dietary">
+    <title>Food Items | Campus Cravings</title>
+    <link rel="icon" type="image/png" href="images/tab_logo.png">
+    <link rel="stylesheet" href="styling/style.css">
+</head>
+<body>
+    <nav>
+        <ul class="nav_bar_main">
+            <li>
+                <a href="index.html" target="_blank">
+                    <button><h4>Home</h4></button>
+                </a>
+            </li>
+            <li>
+                <a href="order_page.html" target="_blank">
+                    <button><h4>Order</h4></button>
+                </a>
+            </li>
+            <li>
+                <a href="delivery_page.html" target="_blank">
+                    <button><h4>Delivery</h4></button>
+                </a>
+            </li>
+        </ul>
+        <ul class="personal">
+            <a href="order_page.html" target="_blank">
+                <img id="cart" alt="cart" src="https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Sale-Stickers-PNG/Shopping_Cart_Icon_PNG_Clipart.png?m=1629814077">
+            </a>
+            <a href="profile.html" target="_blank">
+                <img id="profile" alt="profile" src="https://static.vecteezy.com/system/resources/previews/019/879/186/original/user-icon-on-transparent-background-free-png.png">
+            </a>
+        </ul>
+    </nav>
+    <div class="food_options">
+        <figure>
+            <figcaption>
+                <h1>Select Your Food Items</h1>
+            </figcaption>
+            <table>
+                <tbody>
+                    <tr class="options_table_header">
+                        <th><h2>Cuisine</h2></th>
+                        <th><h2>Name</h2></th>
+                        <th><h2>Price ($)</h2></th>
+                        <th><h2>Quantity</h2></th>
+                        <th><h2>Total</h2></th>
+                    </tr>
+                    <tr id="asian_general_tsao">
+                        <td rowspan="2"><h2>Asian</h2></td>
+                        <td class="item">General Tsao's Chicken</td>
+                        <td id="price_general_tsao">$12.99</td>
+                        <td class="quantity">
+                            <button id="decrease_general_tsao">-</button>
+                            <input type="number" id="quantity_general_tsao" class="item-quantity" value="0" min="0">
+                            <button id="increase_general_tsao">+</button>
+                        </td>
+                        <td id="total_general_tsao" class="total-price">$0.00</td>
+                    </tr>
+                    <tr id="asian_california_roll">
+                        <td class="item">California Roll (6 Pieces)</td>
+                        <td id="price_california_roll">$8.99</td>
+                        <td class="quantity">
+                            <button id="decrease_california_roll">-</button>
+                            <input type="number" id="quantity_california_roll" class="item-quantity" value="0" min="0">
+                            <button id="increase_california_roll">+</button>
+                        </td>
+                        <td id="total_california_roll" class="total-price">$0.00</td>
+                    </tr>
+                    <tr id="fast_food_cheeseburger">
+                        <td rowspan="2"><h2>Fast Food</h2></td>
+                        <td class="item">Cheeseburger</td>
+                        <td id="price_cheeseburger">$10.99</td>
+                        <td class="quantity">
+                            <button id="decrease_cheeseburger">-</button>
+                            <input type="number" id="quantity_cheeseburger" class="item-quantity" value="0" min="0">
+                            <button id="increase_cheeseburger">+</button>
+                        </td>
+                        <td id="total_cheeseburger" class="total-price">$0.00</td>
+                    </tr>
+                    <tr id="fast_food_spicy_chicken">
+                        <td class="item">Spicy Chicken Sandwich</td>
+                        <td id="price_spicy_chicken">$9.99</td>
+                        <td class="quantity">
+                            <button id="decrease_spicy_chicken">-</button>
+                            <input type="number" id="quantity_spicy_chicken" class="item-quantity" value="0" min="0">
+                            <button id="increase_spicy_chicken">+</button>
+                        </td>
+                        <td id="total_spicy_chicken" class="total-price">$0.00</td>
+                    </tr>
+                    <tr id="pizza_cheese">
+                        <td rowspan="2"><h2>Pizza</h2></td>
+                        <td class="item">Cheese Pizza 12"</td>
+                        <td id="price_cheese_pizza">$15.99</td>
+                        <td class="quantity">
+                            <button id="decrease_cheese_pizza">-</button>
+                            <input type="number" id="quantity_cheese_pizza" class="item-quantity" value="0" min="0">
+                            <button id="increase_cheese_pizza">+</button>
+                        </td>
+                        <td id="total_cheese_pizza" class="total-price">$0.00</td>
+                    </tr>
+                    <tr id="pizza_pepperoni">
+                        <td class="item">Pepperoni Pizza 12"</td>
+                        <td id="price_pepperoni_pizza">$16.99</td>
+                        <td class="quantity">
+                            <button id="decrease_pepperoni_pizza">-</button>
+                            <input type="number" id="quantity_pepperoni_pizza" class="item-quantity" value="0" min="0">
+                            <button id="increase_pepperoni_pizza">+</button>
+                        </td>
+                        <td id="total_pepperoni_pizza" class="total-price">$0.00</td>
+                    </tr>
+                    <tr id="pasta_spaghetti">
+                        <td rowspan="2"><h2>Pasta</h2></td>
+                        <td class="item">Spaghetti with Marinara Sauce</td>
+                        <td id="price_spaghetti">$9.99</td>
+                        <td class="quantity">
+                            <button id="decrease_spaghetti">-</button>
+                            <input type="number" id="quantity_spaghetti" class="item-quantity" value="0" min="0">
+                            <button id="increase_spaghetti">+</button>
+                        </td>
+                        <td id="total_spaghetti" class="total-price">$0.00</td>
+                    </tr>
+                    <tr id="pasta_linguine">
+                        <td class="item">Linguine with Alfredo Sauce</td>
+                        <td id="price_linguine">$9.99</td>
+                        <td class="quantity">
+                            <button id="decrease_linguine">-</button>
+                            <input type="number" id="quantity_linguine" class="item-quantity" value="0" min="0">
+                            <button id="increase_linguine">+</button>
+                        </td>
+                        <td id="total_linguine" class="total-price">$0.00</td>
+                    </tr>
+                    <tr id="noodles_pad_thai">
+                        <td rowspan="2"><h2>Noodles</h2></td>
+                        <td class="item">Pad Thai</td>
+                        <td id="price_pad_thai">$8.99</td>
+                        <td class="quantity">
+                            <button id="decrease_pad_thai">-</button>
+                            <input type="number" id="quantity_pad_thai" class="item-quantity" value="0" min="0">
+                            <button id="increase_pad_thai">+</button>
+                        </td>
+                        <td id="total_pad_thai" class="total-price">$0.00</td>
+                    </tr>
+                    <tr id="noodles_pad_see_ew">
+                        <td class="item">Pad See Ew</td>
+                        <td id="price_pad_see_ew">$8.99</td>
+                        <td class="quantity">
+                            <button id="decrease_pad_see_ew">-</button>
+                            <input type="number" id="quantity_pad_see_ew" class="item-quantity" value="0" min="0">
+                            <button id="increase_pad_see_ew">+</button>
+                        </td>
+                        <td id="total_pad_see_ew" class="total-price">$0.00</td>
+                    </tr>
+                    <tr id="spanish_ropa_vieja">
+                        <td rowspan="2"><h2>Spanish</h2></td>
+                        <td class="item">Ropa Vieja</td>
+                        <td id="price_ropa_vieja">$16.99</td>
+                        <td class="quantity">
+                            <button id="decrease_ropa_vieja">-</button>
+                            <input type="number" id="quantity_ropa_vieja" class="item-quantity" value="0" min="0">
+                            <button id="increase_ropa_vieja">+</button>
+                        </td>
+                        <td id="total_ropa_vieja" class="total-price">$0.00</td>
+                    </tr>
+                    <tr id="spanish_chicken_taco">
+                        <td class="item">Chicken Taco</td>
+                        <td id="price_chicken_taco">$2.99</td>
+                        <td class="quantity">
+                            <button id="decrease_chicken_taco">-</button>
+                            <input type="number" id="quantity_chicken_taco" class="item-quantity" value="0" min="0">
+                            <button id="increase_chicken_taco">+</button>
+                        </td>
+                        <td id="total_chicken_taco" class="total-price">$0.00</td>
+                    </tr>
+                    <tr id="indian_chicken_tikka">
+                        <td rowspan="2"><h2>Indian</h2></td>
+                        <td class="item">Chicken Tikka Masala</td>
+                        <td id="price_chicken_tikka">$12.99</td>
+                        <td class="quantity">
+                            <button id="decrease_chicken_tikka">-</button>
+                            <input type="number" id="quantity_chicken_tikka" class="item-quantity" value="0" min="0">
+                            <button id="increase_chicken_tikka">+</button>
+                        </td>
+                        <td id="total_chicken_tikka" class="total-price">$0.00</td>
+                    </tr>
+                    <tr id="indian_aloo_gobi">
+                        <td class="item">Aloo Gobi</td>
+                        <td id="price_aloo_gobi">$12.99</td>
+                        <td class="quantity">
+                            <button id="decrease_aloo_gobi">-</button>
+                            <input type="number" id="quantity_aloo_gobi" class="item-quantity" value="0" min="0">
+                            <button id="increase_aloo_gobi">+</button>
+                        </td>
+                        <td id="total_aloo_gobi" class="total-price">$0.00</td>
+                    </tr>
+                    <tr id="greek_chicken_gyro">
+                        <td rowspan="2"><h2>Greek</h2></td>
+                        <td class="item">Chicken Gyro</td>
+                        <td id="price_chicken_gyro">$10.99</td>
+                        <td class="quantity">
+                            <button id="decrease_chicken_gyro">-</button>
+                            <input type="number" id="quantity_chicken_gyro" class="item-quantity" value="0" min="0">
+                            <button id="increase_chicken_gyro">+</button>
+                        </td>
+                        <td id="total_chicken_gyro" class="total-price">$0.00</td>
+                    </tr>
+                    <tr id="greek_greek_salad">
+                        <td class="item">Greek Salad</td>
+                        <td id="price_greek_salad">$7.99</td>
+                        <td class="quantity">
+                            <button id="decrease_greek_salad">-</button>
+                            <input type="number" id="quantity_greek_salad" class="item-quantity" value="0" min="0">
+                            <button id="increase_greek_salad">+</button>
+                        </td>
+                        <td id="total_greek_salad" class="total-price">$0.00</td>
+                    </tr>
+                    <tr id="dietary_tofu_rice_bowl">
+                        <td rowspan="2"><h2>Dietary Food</h2></td>
+                        <td class="item">Tofu Rice Bowl</td>
+                        <td id="price_tofu_rice_bowl">$15.99</td>
+                        <td class="quantity">
+                            <button id="decrease_tofu_rice_bowl">-</button>
+                            <input type="number" id="quantity_tofu_rice_bowl" class="item-quantity" value="0" min="0">
+                            <button id="increase_tofu_rice_bowl">+</button>
+                        </td>
+                        <td id="total_tofu_rice_bowl" class="total-price">$0.00</td>
+                    </tr>
+                    <tr id="dietary_dinner_style_pancakes">
+                        <td class="item">Dinner Style Pancakes</td>
+                        <td id="price_dinner_style_pancakes">$9.99</td>
+                        <td class="quantity">
+                            <button id="decrease_dinner_style_pancakes">-</button>
+                            <input type="number" id="quantity_dinner_style_pancakes" class="item-quantity" value="0" min="0">
+                            <button id="increase_dinner_style_pancakes">+</button>
+                        </td>
+                        <td id="total_dinner_style_pancakes" class="total-price">$0.00</td>
+                    </tr>
+                    <tr id="trending_chicken_nuggets_fries">
+                        <td rowspan="2"><h2 style="color:red;">Trending</h2></td>
+                        <td class="item">Chicken Nuggets and Fries</td>
+                        <td id="price_chicken_nuggets_fries">$12.99</td>
+                        <td class="quantity">
+                            <button id="decrease_chicken_nuggets_fries">-</button>
+                            <input type="number" id="quantity_chicken_nuggets_fries" class="item-quantity" value="0" min="0">
+                            <button id="increase_chicken_nuggets_fries">+</button>
+                        </td>
+                        <td id="total_chicken_nuggets_fries" class="total-price">$0.00</td>
+                    </tr>
+                    <tr id="trending_empanadas">
+                        <td class="item">Empanadas</td>
+                        <td id="price_empanadas">$7.99</td>
+                        <td class="quantity">
+                            <button id="decrease_empanadas">-</button>
+                            <input type="number" id="quantity_empanadas" class="item-quantity" value="0" min="0">
+                            <button id="increase_empanadas">+</button>
+                        </td>
+                        <td id="total_empanadas" class="total-price">$0.00</td>
+                    </tr>
+                    <tr id="sale_chocolate_chip_cookie">
+                        <td rowspan="2"><h2 style="color:red;">SALE</h2></td>
+                        <td class="item">Chocolate Chip Cookie</td>
+                        <td id="price_chocolate_chip_cookie">$1.99</td>
+                        <td class="quantity">
+                            <button id="decrease_chocolate_chip_cookie">-</button>
+                            <input type="number" id="quantity_chocolate_chip_cookie" class="item-quantity" value="0" min="0">
+                            <button id="increase_chocolate_chip_cookie">+</button>
+                        </td>
+                        <td id="total_chocolate_chip_cookie" class="total-price">$0.00</td>
+                    </tr>
+                    <tr id="sale_vanilla_cake_slice">
+                        <td class="item">Vanilla Cake (Slice)</td>
+                        <td id="price_vanilla_cake_slice">$2.99</td>
+                        <td class="quantity">
+                            <button id="decrease_vanilla_cake_slice">-</button>
+                            <input type="number" id="quantity_vanilla_cake_slice" class="item-quantity" value="0" min="0">
+                            <button id="increase_vanilla_cake_slice">+</button>
+                        </td>
+                        <td id="total_vanilla_cake_slice" class="total-price">$0.00</td>
+                    </tr>
+                                    
+                </tbody>
+            </table>
+        </figure>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.quantity button').forEach(button => {
+                button.addEventListener('click', function(event) {
+                    
+                    const isIncrease = button.id.includes('increase');
+                    const itemRowId = button.id.split('_').slice(1).join('_');
+                    const quantityInputId = 'quantity_' + itemRowId;
+                    const quantityInput = document.getElementById(quantityInputId);
+
+                    if (quantityInput) {
+                        let currentQuantity = parseInt(quantityInput.value, 10);
+                        currentQuantity = isIncrease ? currentQuantity + 1 : currentQuantity - 1;
+                        quantityInput.value = Math.max(currentQuantity, 0);
+
+                        updateTotal(itemRowId);
+                    } else {
+                        console.error('Element not found:', quantityInputId);
+                    }
+                });
+            });
+
+            function updateTotal(itemRowId) {
+                const quantityInputId = 'quantity_' + itemRowId;
+                const priceId = 'price_' + itemRowId;
+                const totalId = 'total_' + itemRowId;
+
+                const priceElement = document.getElementById(priceId);
+                const quantityInput = document.getElementById(quantityInputId);
+                const totalElement = document.getElementById(totalId);
+
+                if (priceElement && quantityInput && totalElement) {
+                    const price = parseFloat(priceElement.textContent.replace('$', ''));
+                    const quantity = parseInt(quantityInput.value, 10);
+                    const total = price * quantity;
+                    totalElement.textContent = `$${total.toFixed(2)}`;
+                } else {
+                    console.error('Element not found:', priceId, quantityInputId, totalId);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

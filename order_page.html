@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="order, promotion, discount, confirm">
+    <title>Order Page | Campus Cravings</title>
+    <link rel="icon" type="image/png" href="images/tab_logo.png">
+    <link rel="stylesheet" href="styling/style.css">
+</head>
+<body>
+    <nav>
+        <ul class="nav_bar_main">
+            <li>
+                <a href="index.html" target="_blank">
+                    <button><h4>Home</h4></button>
+                </a>
+            </li>
+            <li>
+                <a href="order_page.html" target="_blank">
+                    <button><h4>Order</h4></button>
+                </a>
+            </li>
+            <li>
+                <a href="delivery_page.html" target="_blank">
+                    <button><h4>Delivery</h4></button>
+                </a>
+            </li>
+        </ul>
+        <ul class="personal">
+            <a href="order_page.html" target="_blank">
+                <img id="cart" alt="cart" src="https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Sale-Stickers-PNG/Shopping_Cart_Icon_PNG_Clipart.png?m=1629814077">
+            </a>
+            <a href="profile.html" target="_blank">
+                <img id="profile" alt="profile" src="https://static.vecteezy.com/system/resources/previews/019/879/186/original/user-icon-on-transparent-background-free-png.png">
+            </a>
+        </ul>
+    </nav>
+    <div class="welcome">
+        <h1>John Smith's Order</h1>
+    </div>
+    <div class="container">
+        <section class="side-left">
+            <div>
+                <button class="side_buttons" onclick="window.location.href='history.html'">
+                    <h3>Past Orders</h3>
+                </button>
+            </div>
+            <div>
+                <button id="discount_code" class="side_buttons">
+                    <h3>Enter Discount Codes</h3>
+                </button>
+            </div>
+            <div>
+                <button class="side_buttons" onclick="window.location.href='payment.html'" target="_blank">
+                    <h3>Payment Methods</h3>
+                </button>
+            </div>
+        </section>
+        <section class="side-right">
+            <!-- <h2>Summary</h2> -->
+                <table class="summary-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cheese Pizza</td>
+                        <td>1</td>
+                        <td>$15.99</td>
+                    </tr>
+                    <tr>
+                        <td>Chicken Gyro</td>
+                        <td>1</td>
+                        <td>$10.99</td>
+                    </tr>
+                    <tr>
+                        <td>Chocolate Chip Cookie</td>
+                        <td>3</td>
+                        <td>$5.97</td>
+                    </tr>
+                    <tr>
+                        <td>Chicken Nuggets and Fries</td>
+                        <td>1</td>
+                        <td>$ 12.99</td>
+                    </tr>
+                    <tr>
+                        <td>Vanilla Cake (Slice)</td>
+                        <td>1</td>
+                        <td>$2.99</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>        
+    </div>
+    <div id="message3" style="display: none; color: green; margin-top: 20px;">
+        <!-- <p>Your discount code ${discountCode} has been entered!</p> -->
+    </div> 
+    <div class="submit">
+        <br>
+        <button id="place_order_button" onclick="window.location.href='delivery_page.html'">Place Order</button>
+    </div>    
+    <script src="javascript/discount.js"></script>
+</body>
+</html>

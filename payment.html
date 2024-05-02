@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="payment, money, pay, credit_card">
+    <title>Payment | Campus Cravings</title>
+    <link rel="stylesheet" href="styling/style.css">
+    <link rel="icon" type="image/png" href="images/tab_logo.png">
+</head>
+<body>
+    <nav>
+        <ul class="nav_bar_main">
+            <li>
+                <a href="index.html" target="_blank">
+                    <button><h4>Home</h4></button>
+                </a>
+            </li>
+            <li>
+                <a href="order_page.html" target="_blank">
+                    <button><h4>Order</h4></button>
+                </a>
+            </li>
+            <li>
+                <a href="delivery_page.html" target="_blank">
+                    <button><h4>Delivery</h4></button>
+                </a>
+            </li>
+        </ul>
+        <ul class="personal">
+            <a href="order_page.html" target="_blank">
+                <img id="cart" alt="cart" src="https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Sale-Stickers-PNG/Shopping_Cart_Icon_PNG_Clipart.png?m=1629814077">
+            </a>
+            <a href="profile.html" target="_blank">
+                <img id="profile" alt="profile" src="https://static.vecteezy.com/system/resources/previews/019/879/186/original/user-icon-on-transparent-background-free-png.png">
+            </a>
+        </ul>
+    </nav>
+    <div class="welcome">
+        <h1>Your Payment Information</h1>
+    </div>
+    <form>
+        <div>
+            <fieldset class="personal_info">
+                <legend>Personal Information</legend>
+                <div class="info">
+                    <label for="customer_fname"><strong>First Name</strong></label><br>
+                    <input type="text" name="personal" id="customer_fname" value="">
+                </div>
+                <div class="info">
+                    <label for="customer_lname"><strong>Last Name</strong></label><br>
+                    <input type="text" name="personal" id="customer_lname" value="">
+                </div>
+            </fieldset><br>
+        </div>
+        <div class="payment_profile">
+            <fieldset>
+                <legend>Payment Info</legend>
+                <div class="info">
+                    <label for="card_prof"><strong>Card (On File):</strong></label>
+                    <input type="text" name="card_profile" id="card_prof" value="**** **** **** 0000">
+                </div>
+                <div class="info">
+                    <label for="payment"><strong>Card Type</strong></label>
+                    <label for="payment">Visa</label>
+                    <input type="radio" name="visa" id="visa" value="visa">
+                    <label for="master">MasterCard</label>
+                    <input type="radio" name="master" id="master" value="mastercard">
+                    <label for="amex">American Express</label>
+                    <input type="radio" name="amex" id="amex" value="americanexpress">
+                    <label for="disc">Discover</label>
+                    <input type="radio" name="disc" id="disc" value="discover">
+                </div>
+                <div class="info">
+                    <label for="card_Nprof"><strong>Cardholder Name</strong></label>
+                    <input type="text" name="card_Nprofile" id="card_Nprof" value="John Smith">
+                </div>
+                <div class="info">
+                    <label for="card_Eprof"><strong>Cardholder Email</strong></label>
+                    <input type="text" name="card_Eprofile" id="card_Eprof" value="JSS134@pitt.edu">
+                </div>
+                <div class="info">
+                    <label for="card_ADprof"><strong>Billing Address</strong></label>
+                    <input type="text" name="card_ADprofile" id="card_ADprof" value="4200 Fifth Ave, Pittsburgh, PA 15260">
+                </div>
+            </fieldset><br>
+        </div>
+        <div class="pitt-pay">
+            <fieldset>
+                <legend>Panther Funds</legend>
+                <div class="info">
+                    <label for="pitt_username"><strong>Pitt Username</strong></label><br>
+                    <input type="text" name="pitt_u" id="pitt_u" value="">
+                </div>
+                <div class="info">
+                    <label for="pitt_id"><strong>Pitt ID (7 Digit PeopleSoft ID)</strong></label><br>
+                    <input type="text" name="pitt_id" id="pitt_id" value="">
+                </div>
+            </fieldset>
+        </div>
+        <div id="message2" style="display: none; color: green;">
+            <p>Your payment information has been updated!</p>
+        </div>
+        <div class="submit">
+            <br><input type="submit" value="Update Information" id="submit_payment">
+        </div>
+    </form>
+    <script src="javascript/pay_info.js"></script>
+</body>
+</html>
