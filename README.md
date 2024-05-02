@@ -1,11 +1,12 @@
 <div align="left">
 
 # Campus Cravings
-Campus Cravings is a one-stop shop for all of your favorite on-campus eats delivered right to your dorm!
+#### Campus Cravings is a one-stop shop for all of your favorite on-campus eats delivered right to your dorm!
 
 [Visit Campus Cravings](https://sites.pitt.edu/~luc59/luc59_final_project/index.html)
   
   <br>
+  
 Have you ever found yourself up late at night studying, craving your favorite food? Or are you rushing to get home after class on a busy day? Well, Campus Cravings is the place to go if you want your favorite on-campus dishes delivered straight to your dorm!
   
 
