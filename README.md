@@ -3,7 +3,7 @@
 # Campus Cravings
 #### Campus Cravings is a one-stop shop for all of your favorite on-campus eats delivered right to your dorm!
 
-[Visit Campus Cravings](https://sites.pitt.edu/~luc59/luc59_final_project/index.html)
+[Click here to visit Campus Cravings](https://sites.pitt.edu/~luc59/luc59_final_project/index.html)
   
   <br>
   
@@ -15,7 +15,7 @@ Have you ever found yourself up late at night studying, craving your favorite fo
 
 ### Overview
 
-Campus Cravings is my final project for CS 0134 -- Web Site Design and Development. The goal of this project was to combine my skills in HTML/CSS/JavaScript to create a functioning product. Campus Cravings was designed with students like myself in mind. Often times, college life can be very busy, and the last thing you want to think about is having to prepare for yourself or travel to get food. This product is a convenient way for students to continue with their day and have ease of mind when planning out their meals. Students can select from a variety of cuisines, log promotion codes, engage with sale and trending items, view their past order history, update their payment and personal information, check the delivery status of their order, and even communicate with their delivery person.
+Campus Cravings is my final project for CS 0134 Web Site Design and Development. The goal of this project was to combine my skills in HTML/CSS/JavaScript to create a functioning product. Campus Cravings was designed with students like myself in mind. Often times, college life can be very busy, and the last thing you want to think about is having to prepare for yourself or travel to get food. This product is a convenient way for students to continue with their day and have ease of mind when planning out their meals. Students can select from a variety of cuisines, log promotion codes, engage with sale and trending items, view their past order history, update their payment and personal information, check the delivery status of their order, and even communicate with their delivery person.
 
 ### Empowering Student Employment
 
@@ -25,7 +25,7 @@ Further, Campus Cravings was also designed with the driver in mind. The site off
 
 Campus Cravings was designed with HTML/CSS/JavaScript. The contents of the webpage were developed using HTML. Styling took place by using CSS, grouping HTML elements into Classes and IDs to streamline the styling process. The interactive aspects of the site, such as a carousel, price-quantity button system, and effective popup messages, were designed with JavaScript. The JavaScript can be found in the folder titled "javascript" or within the HTML, nested in the "<script>" tag.
 
-I have also designed a simple and scalable logo for Campus Cravings. This was done using Canva. You can find the logos that I designed in the folder titled "images."
+I also designed a simple and scalable logo for Campus Cravings. This was done using Canva. You can find the logos that I designed in the folder titled "images."
 
 ### Future Development
 
